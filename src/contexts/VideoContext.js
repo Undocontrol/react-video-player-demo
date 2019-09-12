@@ -1,23 +1,21 @@
-import React, { Component, createContext } from 'react';
+import React, { useState, createContext } from 'react';
 
 export const VideoContext = createContext();
 
-class VideoContextProvider extends Component {
-    state = {
+export const VideoContextProvider = props => {
+   const [video, setVideo] = useState({
         isPlaying: false,
         video: { 
-            Title: 'Trippy', 
-            Description: 'Weird floating white giant chases butterfly', 
+            title: 'Trippy', 
+            description: 'Weird floating white giant chases butterfly', 
             url: '' 
         }
-    }
-    render(){
-        return (
-            <VideoContext.Provider value={{...this.state}}>
-                {this.props.children}
-            </VideoContext.Provider>
-        );
-    }
+    });
+    return (
+        <VideoContext.Provider value={[video, setVideo]}>
+            {props.children}
+        </VideoContext.Provider>
+    );
 }
 
 export default VideoContextProvider;

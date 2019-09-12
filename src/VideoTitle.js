@@ -1,11 +1,12 @@
-import React, { createContext, useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './App.css';
-export const Context = createContext({});
+import { VideoContext } from './contexts/VideoContext';
 
-export function VideoTitle() {
+const VideoTitle = () => {
+  const [video] = useContext(VideoContext);
   return (
     <header className="header">
-      <p>Hello</p>
+      <h1>{ video.video.title }</h1>
     </header>
   );
 
