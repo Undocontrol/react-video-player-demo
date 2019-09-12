@@ -1,27 +1,25 @@
 import React, { createContext, useState } from 'react';
 import './App.css';
+import VideoContextProvider from './contexts/VideoContext';
 import VideoTitle from './VideoTitle';
 import VideoDescription from './VideoDescription';
+import VideoPlayer from './VideoPlayer';
 import VideoControlBar from './VideoControlBar';
-const BASE_EMBED_URL = 'https://www.youtube.com/embed/';
 export const Context = createContext({});
 
-function videoPlayer() {
-  //const [video, setVideo] = useState();
+function App() {
+  const [video, setVideo] = useState({ isPlaying: false });
+
   return (
     <main className="videoPlayer">
-      <VideoTitle></VideoTitle>
-      <iframe width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/a98LI-arNS4" 
-      frameBorder="0" 
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-      allowFullScreen>
-      </iframe>
-      <VideoDescription></VideoDescription>
-      <VideoControlBar></VideoControlBar>
+      <VideoContextProvider>
+        <VideoTitle></VideoTitle>
+        <VideoPlayer></VideoPlayer>
+        <VideoDescription></VideoDescription>
+        <VideoControlBar></VideoControlBar>
+      </VideoContextProvider>
     </main>
   );
 }
 
-export default videoPlayer
+export default App
