@@ -1,14 +1,37 @@
-$green: #4dbf8c;
-$red: #e44e4e;
-$font: 'Open Sans', sans-serif;
-$mainColor: $green;
-$seconedColor: darken($mainColor, 10%);
-//@include general($font, #eee);
-//@include scrollbar(#555, 4px);
+$white: #fff;
+$black: #000;
+$blue: #188ec4;
+$font: 'Raleway', sans-serif;
+$mainColor: $blue;
+$body-bg: #111;
+$border-radius: 5px;
+$button-hover: #008CBA;
 
-@mixin center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@mixin background-colour {
+    background-color: $body-bg;
+    background-image: radial-gradient(#333, #111);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@mixin button-base {
+    width: 30px;
+    height: 30px;
+    flex: 0;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 0 1em black;
+}
+
+@mixin progress-bar {
+    border-radius: 5px;
+    box-shadow: inset -3px 2px 7px rgba(255,255,255,.28);
+    background-image: linear-gradient(to right, #008CBA, #3471eb 49%, #d3dbeb);
+}
+
+@mixin header-font {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
 }
