@@ -1,15 +1,14 @@
 import React, { createContext, useState } from 'react';
-import './App.css';
+import './App.scss';
 import {VideoContextProvider} from './contexts/VideoContext';
 import VideoTitle from './VideoTitle';
 import VideoDescription from './VideoDescription';
 import VideoPlayer from './VideoPlayer';
 import VideoControlBar from './VideoControlBar';
-export const Context = createContext({});
 
 function App() {
   return (
-    <main className="videoPlayer">
+    <main className="video-player">
       <VideoContextProvider>
           <VideoTitle></VideoTitle>
           <VideoPlayer></VideoPlayer>

@@ -1,12 +1,11 @@
-import React, { useState, useContext } from 'react';
-import './App.css';
+import React, { useContext } from 'react';
 import { VideoContext } from './contexts/VideoContext';
 
 function VideoDescription() {
-  const [video] = useContext(VideoContext);
+  const [ context ] = useContext(VideoContext);
   return (
     <article className="description">
-        <h2>{ video.video.description }</h2>
+        <h2>{ context.video.description }</h2>
     </article>
   );
 
