@@ -4,14 +4,14 @@
   --------------------*/
 .control-bar {
   bottom: 0;
-  width: 100%;
   border-radius: $border-radius;
+  @include box-shadow;
   margin: 10px;
   position: relative;
   padding: 15px;
   position: absolute;
   text-align: left;
-  @include box-shadow;
+  width: 100%;
 
   .button {
     @include button-base;
@@ -36,20 +36,20 @@
   }
   
   .toggle {
-    width: 100px;
-    margin-right: 10px;
     display: inline-block;
+    margin-right: 10px;
+    width: 100px;
   }
   
   .progressBar {
-    width: 90%;
     display: inline-block;
+    width: 90%;
 
     div {
-      height: 10px;
-      z-index: 1;
       border-radius: $border-radius;
       @include progress-bar;
+      height: 10px;
+      z-index: 1;
     }
   }
 }

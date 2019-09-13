@@ -10,8 +10,8 @@
   }
   body {
     @include background-colour;
-    height: 100%;
     color: $white;
+    height: 100%;
     text-align: center;
     width: 100vw;
 }
