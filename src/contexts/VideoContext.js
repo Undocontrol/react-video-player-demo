@@ -1,6 +1,6 @@
 /**
  * This file uses the Context API and provider to essentially 
- * create global variables that can be passed around in a React app.
+ * create global state that can be passed around in a React app.
  */
 import React, { useState, createContext } from 'react';
 //Creates a Context object.
