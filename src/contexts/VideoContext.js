@@ -15,7 +15,7 @@ export const VideoContextProvider = props => {
         ogg: 'https://www.w3schools.com/html/mov_bbb.ogg',
         progress: 0
     });
-    //We don't update the state directly, we call methods on it which do the updating.
+    //Sets the video state to playing/paused.
     const setPlaying = value => {
         setVideo({...video, isPlaying: value})
     }
