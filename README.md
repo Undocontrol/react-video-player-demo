@@ -27,8 +27,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ### Resources 
 
 https://medium.com/@konstankino/2019-reactjs-best-practices-design-patterns-516e1c3ca06a
@@ -37,3 +35,7 @@ https://learn.freecodecamp.org/
 https://reactjs.org/tutorial/tutorial.html
 https://www.toptal.com/react/react-context-api
 https://hackernoon.com/how-to-use-the-new-react-context-api-fce011e7d87
+
+Thank you for visiting.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
