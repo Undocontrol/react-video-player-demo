@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { VideoContext } from '../Contexts/VideoContext';
+import { VideoContext } from '../contexts/VideoContext';
 import './styles.scss';
 
 const VideoPlayer = () => {

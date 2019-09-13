@@ -4,7 +4,7 @@
  * which we use to watch the video progress so we can reflect that in the progress bar.
  */
 import React, { useContext } from 'react';
-import { VideoContext } from '../Contexts/VideoContext';
+import { VideoContext } from '../contexts/VideoContext';
 import './styles.scss';
 
 const ControlBar = () => {

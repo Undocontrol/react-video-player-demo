@@ -7,7 +7,7 @@
 */	
 
 import React from 'react';
-import { VideoContextProvider } from '../Contexts/VideoContext';
+import { VideoContextProvider } from '../contexts/VideoContext';
 import VideoTitle from '../VideoTitle';
 import VideoPlayer from '../VideoPlayer';
 import VideoControlBar from '../VideoControlBar';
