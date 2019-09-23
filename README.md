@@ -30,10 +30,15 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### Resources 
 
 https://medium.com/@konstankino/2019-reactjs-best-practices-design-patterns-516e1c3ca06a
+
 https://devhints.io/react
+
 https://learn.freecodecamp.org/
+
 https://reactjs.org/tutorial/tutorial.html
+
 https://www.toptal.com/react/react-context-api
+
 https://hackernoon.com/how-to-use-the-new-react-context-api-fce011e7d87
 
 Thank you for visiting.
