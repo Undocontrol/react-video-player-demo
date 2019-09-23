@@ -3,7 +3,9 @@ This is a React HTML5 Video player which uses functional components and React Co
 
 ## Available Scripts
 
-Firstly, clone the project. 
+Firstly, clone the project. Then 
+
+### `cd` into `react-video-player-demo`.
 
 ### `npm install`
 
